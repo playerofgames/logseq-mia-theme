@@ -165,10 +165,6 @@
 .menu-link.chosen  {
 	color: var(--ls-primary-text-color) !important;
 }
-.CodeMirror-gutters {
-	background-color: var(--ls-secondary-background-color);
-}
-
 
 a.tag {
 	font-size: 90%;
@@ -206,7 +202,7 @@ a.tag {
 body,
 #global-graph,
 .cp__all_pages {
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* Content entered by user is in iA Writer Quattro Variable */
@@ -234,6 +230,16 @@ body,
     --ls-title-text-color: #CCCCCC;
 	--color-level-1: black;
 }
+
+.CodeMirror, .CodeMirror-wrap {
+	background-color: var(--ls-tertiary-background-color) !important;
+}
+
+.CodeMirror-gutters {
+	background-color: var(--ls-secondary-background-color) !important;
+}
+
+
 
 /* Distinguish flash cards */
 
@@ -288,13 +294,13 @@ mark {
 /* Page title, breadcrumbs fonts and styles */
 
 h1.title {
-	font-family: "SF Pro Display", -apple-system-headline, -apple-system, BlinkMacSystemFont, sans-serif !important;
+	font-family: "SF Pro Display", -apple-system-headline, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif !important;
 	font-size: 20pt !important;
 }
 
 a.page-title, 
 .block-parents a {
-	font-family: -apple-system, BlinkMacSystemFont;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
 	color: var(--ls-link-ref-text-color);
 	font-weight: 300;
 	transition: none;
