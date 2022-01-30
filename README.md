@@ -4,7 +4,8 @@ A theme inspired by macOS and iA Writer.
 
 ### Running the Sample
 
-- Just `Load unpacked plugin` in Logseq Desktop client.
+- At the moment, you need to install  [iA-Fonts](https://github.com/iaolo/iA-Fonts) until I get them packed into CSS.  
+- `Load unpacked plugin` in Logseq Desktop client.
 
 ### Links
 
