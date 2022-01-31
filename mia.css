@@ -150,6 +150,9 @@
 */
 }
 
+	background-color: var(--ls-tertiary-background-color);
+}
+
 #ui__ac .chosen,
 .chosen {
 	--ls-primary-text-color: #fafafa;
@@ -298,6 +301,12 @@ h1.title {
 	font-size: 20pt !important;
 }
 
+/* Give the field a bit of pizazz when it's being edited */
+
+h1.title input:focus-within {
+	color: var(--ls-link-text-color) !important;
+}
+
 a.page-title, 
 .block-parents a {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
@@ -330,6 +339,7 @@ a.page-title:hover,
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) *:is(.editor-inner .h3, .ls-block h3) {
 	font-style: italic !important;
 	font-size: 110% !important;
+	font-weight: normal;
 }
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) *:is(.editor-inner .h4, .ls-block h4) {
@@ -340,11 +350,12 @@ a.page-title:hover,
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) *:is(.editor-inner .h5, .ls-block h5) {
 	font-style: italic !important;
 	font-size: 100% !important;
+	font-weight: normal;
 }
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) *:is(.editor-inner .h6, .ls-block h6) {
-	xfont-style: italic !important;
 	font-size: 100% !important;
+	font-weight: normal;
 }
 
 
