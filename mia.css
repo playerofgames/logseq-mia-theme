@@ -150,10 +150,6 @@
 */
 }
 
-#ui__ac {
-	background-color: var(--ls-tertiary-background-color);
-}
-
 #ui__ac .chosen,
 .chosen {
 	--ls-primary-text-color: #fafafa;
