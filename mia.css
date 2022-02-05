@@ -23,6 +23,10 @@
     --ls-link-text-hover-color: #272727;
 	--ls-link-ref-text-color: #747474;
     --ls-link-ref-text-hover-color: #272727;
+		
+    --ls-block-highlight-color: #ACEBFB;
+    --ls-selection-background-color: #ACEBFB;
+
 
 /*
     --ls-table-tr-even-background-color: #f7f7f7;
@@ -99,6 +103,10 @@
     --ls-link-ref-text-hover-color: #c1c1c1;
 
     --ls-page-inline-code-color: var(--ls-primary-text-color);
+	
+    --ls-block-highlight-color: #134353;
+    --ls-selection-background-color: #134353;
+	
 /*
     --ls-table-tr-even-background-color: #03333f;
     --ls-active-primary-color: #8ec2c2;
