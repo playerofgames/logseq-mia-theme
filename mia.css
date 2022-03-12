@@ -1,3 +1,5 @@
+@import "fonts.css";
+
 /* Colours */
 
 .white-theme, html[data-theme=light] {
@@ -226,14 +228,14 @@ body,
     --ls-title-text-color: #1A1A1A;
 	--color-level-1: white;
 	
-	font-family: "iA Writer Quattro V";	
+	font-family: "iA Writer Quattro S", sans-serif;	
 }
 
 /* Monospace code shall use iA Writer Mono */
 
 :not(pre)>code,
 .CodeMirror {
-	font-family: "iA Writer Mono V", "iA Writer Mono", "IBM Plex Mono", Menlo, Monaco, MonoLisa, 'Fira Code',Consolas,'COURIER NEW',monospace;
+	font-family: "iA Writer Mono S", "IBM Plex Mono", Menlo, Monaco, MonoLisa, 'Fira Code',Consolas,'COURIER NEW',monospace;
 }
 
 
@@ -249,6 +251,10 @@ body,
 	text-shadow: none !important;
 }
 
+.CodeMirror pre.CodeMirror-line {
+	font-size: 15px;	
+}
+
 .CodeMirror-linenumber {
 	color: var(--ls-secondary-text-color) !important;
 	text-shadow: none !important;
@@ -257,6 +263,16 @@ body,
 .CodeMirror-gutters {
 	background-color: var(--ls-secondary-background-color) !important;
 	opacity: 0.6;
+}
+
+.extensions__code > .extensions__code-lang {
+	font-size: 75%;
+	font-style: italic;
+	padding-right: 1em;
+	padding-bottom: 0px;
+	margin-bottom: 0;
+	color: var(--ls-secondary-text-color);
+	background-color: inherit;
 }
 
 /* default colour when not being styled */
@@ -291,7 +307,7 @@ blockquote {
 /* Distinguish flash cards */
 
 div[data-refs-self*='"card"'] {
-    margin: 1rem 0;
+    /*margin: 1rem 0;*/
 }
 
 .ls-block.shadow-xl {
