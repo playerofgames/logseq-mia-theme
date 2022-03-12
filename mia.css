@@ -29,7 +29,6 @@
     --ls-block-highlight-color: #ACEBFB;
     --ls-selection-background-color: #ACEBFB;
 
-
 /*
     --ls-table-tr-even-background-color: #f7f7f7;
     --ls-active-primary-color: rgb(4, 85, 145);
@@ -108,6 +107,14 @@
 	
     --ls-block-highlight-color: #134353;
     --ls-selection-background-color: #134353;
+	
+    --ls-border-color: #555;
+    --ls-block-bullet-border-color: #444;
+    --ls-block-bullet-border-color: #555;
+    --ls-guideline-color: rgba(64,64,64,0.5);
+    --ls-block-bullet-color: #444;
+    --ls-scrollbar-foreground-color: rgba(64,64,64,0.75);;
+    --ls-scrollbar-background-color: rgba(30, 60, 67, 0.1);
 	
 /*
     --ls-table-tr-even-background-color: #03333f;
@@ -266,12 +273,12 @@ body,
 }
 
 .extensions__code > .extensions__code-lang {
-	font-size: 75%;
+	font-size: 90%;
 	font-style: italic;
-	padding-right: 1em;
+	padding-right: 1ex;
 	padding-bottom: 0px;
 	margin-bottom: 0;
-	color: var(--ls-secondary-text-color);
+	color: var(--ls-primary-text-color);
 	background-color: inherit;
 }
 
