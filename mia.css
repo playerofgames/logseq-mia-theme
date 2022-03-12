@@ -113,8 +113,8 @@
     --ls-block-bullet-border-color: #555;
     --ls-guideline-color: rgba(64,64,64,0.5);
     --ls-block-bullet-color: #444;
-    --ls-scrollbar-foreground-color: rgba(64,64,64,0.75);;
-    --ls-scrollbar-background-color: rgba(30, 60, 67, 0.1);
+    --ls-scrollbar-foreground-color: rgba(64,64,64,1);
+    --ls-scrollbar-background-color: r rgba(64,64,64,0.5);
 	
 /*
     --ls-table-tr-even-background-color: #03333f;
