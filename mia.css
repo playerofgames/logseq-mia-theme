@@ -179,6 +179,10 @@ a.tag {
 	color: var(--ls-link-ref-text-color);
 }
 
+a.tag[data-ref=card] {
+    opacity: 0.5;
+}
+
 .page-ref {
 	color: var(--ls-link-text-color);
 }
@@ -196,7 +200,7 @@ a.tag {
 #custom-context-menu a:hover,
 .cp__right-sidebar-topbar a:hover,
 .cp__header a.button:hover {
-	xcolor: var(--ls-link-text-color);
+	/*color: var(--ls-link-text-color);*/
 	opacity: 1;
 }
 
@@ -225,12 +229,13 @@ body,
 	font-family: "iA Writer Quattro V";	
 }
 
-/* Monospace code shall use iA Writer Mono Variable */
+/* Monospace code shall use iA Writer Mono */
 
-.extensions__code>.CodeMirror,
-:not(pre)>code {
+:not(pre)>code,
+.CodeMirror {
 	font-family: "iA Writer Mono V", "iA Writer Mono", "IBM Plex Mono", Menlo, Monaco, MonoLisa, 'Fira Code',Consolas,'COURIER NEW',monospace;
 }
+
 
 .dark-theme .sidebar-item .content,
 .dark-theme #main-content-container {
@@ -241,21 +246,58 @@ body,
 
 .CodeMirror, .CodeMirror-wrap {
 	background-color: var(--ls-tertiary-background-color) !important;
+	text-shadow: none !important;
+}
+
+.CodeMirror-linenumber {
+	color: var(--ls-secondary-text-color) !important;
+	text-shadow: none !important;
 }
 
 .CodeMirror-gutters {
 	background-color: var(--ls-secondary-background-color) !important;
+	opacity: 0.6;
 }
 
+/* default colour when not being styled */
+.CodeMirror pre>span {
+	color: var(--ls-primary-text-color);
+}
 
+/* border around preformatted text to make them stand out just a bit. */
+
+.admonitionblock,
+.CodeMirror {
+	border: 1px solid var(--ls-quaternary-background-color);
+	background-color: var(--ls-tertiary-background-color);
+}
+
+blockquote {
+	background: transparent;
+    border-left: none;
+	font-style: italic;
+}
+
+.admonitionblock {
+    margin: 1rem 0;
+    padding: 12px 20px;
+	border: 1px solid var(--ls-quaternary-background-color);
+}
+
+.admonitionblock div {
+	font-size: 100%;
+}
 
 /* Distinguish flash cards */
+
+div[data-refs-self*='"card"'] {
+    margin: 1rem 0;
+}
 
 .ls-block.shadow-xl {
 	border: 1px solid var(--ls-quaternary-background-color);
 	background-color: var(--ls-tertiary-background-color);
 	border-radius: 10px;
-	box-shadow: none;
 }
 
 /* Distinguish right sidebar content */
@@ -371,7 +413,7 @@ a.page-title:hover,
 	filter: saturate(0%);
 }
 
-/* Hide stuff */
+/* Hide stuff: help icon (just press ?) and mindmap  */
 
 #logseq-mark-map-injected-ui-item-logseq-mark-map-logseq-mark-map-logseq-mark-map,
 .cp__sidebar-help-btn {
