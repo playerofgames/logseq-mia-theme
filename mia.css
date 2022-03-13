@@ -4,6 +4,10 @@
 
 .white-theme, html[data-theme=light] {
 
+	--accent-color: #0b82b9;
+	--accent-dark-color: #3982C2;
+	--accent-bright-color: #00BFFF;		
+	
 	--ls-primary-background-color: #F7F7F7;
 	--ls-secondary-background-color: #EAEAEA;
     --ls-tertiary-background-color: #FBFBFB;
@@ -79,8 +83,13 @@
 */
 }
 
+/* Note: chosen (i.e., highlighted selection) means we need lighter foreground colors */
 .chosen,
 .dark-theme, html[data-theme=dark] {
+
+	--accent-color: #18BDEC;
+	--accent-dark-color: #3982C2;
+	--accent-bright-color: #00BFFF;		
 	
     --ls-primary-background-color: #18181A;
     --ls-secondary-background-color: #27272A;
@@ -167,16 +176,45 @@
 */
 }
 
+/*
+input, textarea {
+    caret-color :var(--accent-bright-color) !important;
+}
+*/
+
+/* Checkbox beautification */
+
+span.inline.done {
+	opacity: 1;
+}
+
+.form-checkbox {
+	--ls-page-checkbox-color: var(--ls-tertiary-background-color);
+	--ls-page-checkbox-border-color: var(--ls-quaternary-background-color);
+	
+	background-color: var(--ls-page-checkbox-color);
+	border: 1px solid var(--ls-page-checkbox-border-color);
+	border-radius: 5px;
+	opacity: 1;
+}
+
+.form-checkbox:checked:focus,
+.form-checkbox:checked {
+	background-color: var(--accent-color);
+	border: 1px solid var(--accent-color) !important;
+	opacity: 1 !important;
+}
+
 #ui__ac .chosen,
 .chosen {
 	--ls-primary-text-color: #fafafa;
 	--ls-link-ref-text-color: #eaeaea;
 	--ls-link-ref-text-hover-color: #fafafa;
-	--ls-quaternary-background-color: #3982C2;
+	--ls-quaternary-background-color: var(--accent-dark-color);
 }
 
 #ui__ac .chosen {
-	background-color: #3982C2;
+	background-color: var(--accent-dark-color);
 }
 
 .menu-link.chosen  {
