@@ -186,6 +186,7 @@ input, textarea {
 
 span.inline.done {
 	opacity: 1;
+	color: var(--ls-secondary-text-color);
 }
 
 .form-checkbox {
@@ -205,6 +206,8 @@ span.inline.done {
 	opacity: 1 !important;
 }
 
+/* Selection lists (search, tag complete, etc.) */
+
 #ui__ac .chosen,
 .chosen {
 	--ls-primary-text-color: #fafafa;
@@ -221,6 +224,8 @@ span.inline.done {
 	color: var(--ls-primary-text-color) !important;
 }
 
+/* links and tags */
+
 a.tag {
 	font-size: 90%;
 	color: var(--ls-link-ref-text-color);
@@ -233,6 +238,8 @@ a.tag[data-ref=card] {
 .page-ref {
 	color: var(--ls-link-text-color);
 }
+
+/* colouring UI */
 
 .cp__right-sidebar-topbar a,
 .cp__header a.button {
@@ -250,7 +257,6 @@ a.tag[data-ref=card] {
 	/*color: var(--ls-link-text-color);*/
 	opacity: 1;
 }
-
 
 
 
@@ -329,7 +335,7 @@ body,
 
 .admonitionblock,
 .CodeMirror {
-	border: 1px solid var(--ls-quaternary-background-color);
+	border: 1px dotted var(--ls-quaternary-background-color);
 	background-color: var(--ls-tertiary-background-color);
 }
 
@@ -342,7 +348,7 @@ blockquote {
 .admonitionblock {
     margin: 1rem 0;
     padding: 12px 20px;
-	border: 1px solid var(--ls-quaternary-background-color);
+	border: 1px dotted var(--ls-quaternary-background-color);
 }
 
 .admonitionblock div {
@@ -356,7 +362,7 @@ div[data-refs-self*='"card"'] {
 }
 
 .ls-block.shadow-xl {
-	border: 1px solid var(--ls-quaternary-background-color);
+	border: 1px dotted var(--ls-quaternary-background-color);
 	background-color: var(--ls-tertiary-background-color);
 	border-radius: 10px;
 }
