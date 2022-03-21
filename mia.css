@@ -480,7 +480,7 @@ a.page-title:hover,
 	filter: saturate(0%);
 }
 
-/* Hide stuff: help icon (just press ?) and mindmap  */
+/* Hide extraneous stuff: help icon (just press ?) and mindmap (ctrl-m ctrl-m) */
 
 #logseq-mark-map-injected-ui-item-logseq-mark-map-logseq-mark-map-logseq-mark-map,
 .cp__sidebar-help-btn {
