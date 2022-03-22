@@ -13,9 +13,17 @@ The colour scheme is inspired by *iA Writer* and *macOS*.
 
 ### Using the theme
 
-- Hopefully in the Logseq marketplace soon.
+You can install the theme using the *Logseq marketplace*.
 
-- `Load unpacked plugin` in Logseq Desktop client.
+Go to **Plugins** from the main menu (click on '...' in top right of the Logseq window ), select **Marketplace** and then **Themes**. Each theme has an 'Install' link.
+
+If you don't see **Plugins** on the main menu, you need to enable plug-ins: go to Logseq **Settings** from the main menu, then the **Advanced** section, and enable the **Plug-in system** and restart Logseq.
+
+If you don't want to use the marketplace, you can add the following line to your `custom.css` page in *Logseq*:
+
+```
+@import url('https://playerofgames.github.io/logseq-mia-theme/mia.css');
+```
 
 ### Links
 
