@@ -2,9 +2,9 @@
 
 A [Logseq](https://github.com/logseq/logseq) theme inspired by [macOS](https://www.apple.com/macos/monterey/) and [iA Writer](https://ia.net/writer).
 
-<img alt="miA theme light screenshot" src="screenshots/miA-light.png" />
+![miA theme light screenshot](./screenshots/miA-light.png)
 
-<img alt="miA theme dark screenshot" src="screenshots/miA-dark.png" />
+![miA theme dark screenshot](./screenshots/miA-dark.png)
 
 For user interface elements, the 'system' font is used—[San Francisco](https://developer.apple.com/fonts/) on macOS. User content is rendered using the [iA Writer Quattro and Mono](https://github.com/iaolo/iA-Fonts) fonts.
 
@@ -31,7 +31,8 @@ https://github.com/playerofgames/logseq-mia-theme
 
 Licensed under the MIT License.
 
-<img alt="Logseq miA theme" src="icon.png" width="128" />
+![Logseq miA theme](./icon.png)
+
 
 
 
