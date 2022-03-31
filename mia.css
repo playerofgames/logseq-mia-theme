@@ -2,7 +2,7 @@
 
 /* Colours */
 
-.white-theme, html[data-theme=light] {
+.light-theme, .white-theme, html[data-theme=light] {
 
 	--accent-color: #0b82b9;
 	--accent-dark-color: #3982C2;
@@ -108,9 +108,9 @@
     --ls-a-chosen-bg: #27272A;
 	
     --ls-link-text-color: #18BDEC;
-    --ls-link-text-hover-color: #c1c1c1;
-	--ls-link-ref-text-color: #8a8a8a;
-    --ls-link-ref-text-hover-color: #c1c1c1;
+    --ls-link-text-hover-color: var(--ls-primary-text-color);
+	--ls-link-ref-text-color: var(--ls-secondary-text-color);
+    --ls-link-ref-text-hover-color: var(--ls-primary-text-color);
 
     --ls-page-inline-code-color: var(--ls-primary-text-color);
 	
@@ -118,10 +118,9 @@
     --ls-selection-background-color: #134353;
 	
     --ls-border-color: #555;
-    --ls-block-bullet-border-color: #444;
-    --ls-block-bullet-border-color: #555;
+    --ls-block-bullet-color: #555;
+    --ls-block-bullet-border-color: #666;
     --ls-guideline-color: rgba(64,64,64,0.5);
-    --ls-block-bullet-color: #444;
     --ls-scrollbar-foreground-color: rgba(64,64,64,1);
     --ls-scrollbar-background-color: r rgba(64,64,64,0.5);
 	
@@ -204,6 +203,11 @@ span.inline.done {
 	background-color: var(--accent-color);
 	border: 1px solid var(--accent-color) !important;
 	opacity: 1 !important;
+}
+
+/* 50% opacity reduces contrast too much; theme is already lower-contrast */
+.opacity-50 {
+	opacity: 0.666;
 }
 
 /* Selection lists (search, tag complete, etc.) */
@@ -471,8 +475,6 @@ a.page-title:hover,
 	font-size: 100% !important;
 	font-weight: normal;
 }
-
-
 
 /* Mind map icon desaturation */
 
