@@ -22,7 +22,7 @@ Go to **Plugins** from the main menu (click on '...' in top right of the Logseq 
 
 If you don't see **Plugins** on the main menu, you need to enable plug-ins: go to Logseq **Settings** from the main menu, then the **Advanced** section, and enable the **Plug-in system** and restart Logseq.
 
-If you don't want to use the marketplace, you can add one of the following lines to your `custom.css` page in *Logseq* (you can edit this file using Logseq **Settings**).
+If you don't want to use the marketplace, you can add one of the following lines to your `custom.css` page in Logseq (you can edit this file using Logseq **Settings**).
 
 To use *miA* (with the "Quattro" font):
 
@@ -47,12 +47,12 @@ To use *miA Mono*:
 The following CSS variables are used to produce the different theme variations, shown here with the values for *Duo*:
 
 ```
-	--content-font-family:  "iA Writer Duo S";
-	--content-line-height: 20pt;
-	--block-padding: 4px;
-	--content-h1-size: 100%;
-	--content-h2-size: 100%;
-	--content-h3-size: 100%;
+--content-font-family:  "iA Writer Duo S";
+--content-line-height: 20pt;
+--block-padding: 4px;
+--content-h1-size: 100%;
+--content-h2-size: 100%;
+--content-h3-size: 100%;
 ```
 
 For example, if you wanted the *Duo* variation to use the standard *Logseq* line-height, you could do:
@@ -63,9 +63,9 @@ For example, if you wanted the *Duo* variation to use the standard *Logseq* line
 }
 ```
 
-If you like the theme colour scheme, but not the *iA Writer* fonts, you can easily use another font by changing the `--content-font-family` variable.
+If you like the theme colour scheme, but not the *iA Writer* fonts, you can use another font by changing the `--content-font-family` variable.
 
-If you are not on *macOS* and would like the full theme effect of the Logseq user interface using the *San Francisco* font, you can install the "SF Pro Text" and "SF Pro Display" fonts from [here](https://developer.apple.com/fonts/).
+If you are not on *macOS* and would like the full theme effect of the Logseq user interface with the *San Francisco* font, you can install the "SF Pro Text" and "SF Pro Display" fonts from [here](https://developer.apple.com/fonts/).
 
 ### Links
 
