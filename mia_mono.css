@@ -1,0 +1,10 @@
+@import "mia_base.css";
+
+:root {
+	--content-font-family:  "iA Writer Mono S";
+	--content-line-height: 20pt;
+	--block-padding: 4px;
+	--content-h1-size: 100%;
+	--content-h2-size: 100%;
+	--content-h3-size: 100%;
+}
