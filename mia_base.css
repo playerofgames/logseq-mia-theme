@@ -426,7 +426,7 @@ mark {
 /* Page title, breadcrumbs fonts and styles */
 
 h1.title {
-	font-family: "SF Pro Display", -apple-system-headline, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif !important;
+	font-family: -apple-system-headline, "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif !important;
 	font-size: 20pt !important;
 }
 
@@ -438,7 +438,7 @@ h1.title input:focus-within {
 
 a.page-title, 
 .block-parents a {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
 	color: var(--ls-link-ref-text-color);
 	font-weight: 300;
 	transition: none;
