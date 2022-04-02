@@ -2,7 +2,7 @@
 
 /* Colours */
 
-.light-theme, .white-theme, html[data-theme=light] {
+.light, .light-theme, .white-theme, html[data-theme=light] {
 
 	--accent-color: #0b82b9;
 	--accent-dark-color: #3982C2;
@@ -84,7 +84,7 @@
 
 /* Note: chosen (i.e., highlighted selection) means we need lighter foreground colors */
 .chosen,
-.dark-theme, html[data-theme=dark] {
+.dark, .dark-theme, html[data-theme=dark] {
 
 	--accent-color: #18BDEC;
 	--accent-dark-color: #3982C2;
@@ -98,7 +98,7 @@
 	--ls-primary-text-color: #CCCCCC;
 	--ls-title-text-color: #CCCCCC;
 	
-	--ls-secondary-text-color: #808080;
+	--ls-secondary-text-color: #909090;
 	
 	--ls-block-properties-background-color: #27272A;
 	--ls-page-properties-background-color: #27272A;
@@ -302,6 +302,8 @@ textarea {
 }
 
 
+.dark .sidebar-item .content,
+.dark #main-content-container,
 .dark-theme .sidebar-item .content,
 .dark-theme #main-content-container {
 	--ls-primary-text-color: #CCCCCC;
@@ -316,6 +318,7 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 	--ls-page-properties-background-color: #E0E0E0;
 }
 
+.dark .cp__right-sidebar .block-content,
 .dark-theme .cp__right-sidebar .block-content {
 	--ls-page-inline-code-bg-color: var(--ls-tertiary-background-color);
 	--ls-page-blockquote-bg-color: var(--ls-tertiary-background-color);
@@ -406,6 +409,7 @@ div[data-refs-self*='"card"'] {
 	--ls-primary-text-color: #505050;	
 }
 
+.dark .left-sidebar-inner,
 .dark-theme .left-sidebar-inner {
 	--ls-primary-text-color: #B3B3B3;	
 }
