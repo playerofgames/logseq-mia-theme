@@ -305,10 +305,8 @@ textarea {
 	--color-level-2: #E0E0E0;
 }
 
-.dark .sidebar-item .content,
-.dark #main-content-container,
-.dark-theme .sidebar-item .content,
-.dark-theme #main-content-container {
+:is(.dark, .dark-theme) .sidebar-item,
+:is(.dark, .dark-theme) #main-content-container {
 	--ls-primary-text-color: #CCCCCC;
 	--ls-title-text-color: #CCCCCC;
 	--color-level-1: var(--ls-secondary-background-color);
@@ -321,8 +319,7 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 	--ls-page-properties-background-color: #E0E0E0;
 }
 
-.dark .cp__right-sidebar .block-content,
-.dark-theme .cp__right-sidebar .block-content {
+:is(.dark, .dark-theme) .cp__right-sidebar .block-content {
 	--ls-page-inline-code-bg-color: var(--ls-tertiary-background-color);
 	--ls-page-blockquote-bg-color: var(--ls-tertiary-background-color);
 	--ls-page-properties-background-color: var(--ls-tertiary-background-color);
@@ -412,8 +409,7 @@ div[data-refs-self*='"card"'] {
 	--ls-primary-text-color: #505050;	
 }
 
-.dark .left-sidebar-inner,
-.dark-theme .left-sidebar-inner {
+:is(.dark, .dark-theme) .left-sidebar-inner {
 	--ls-primary-text-color: #B3B3B3;	
 }
 
