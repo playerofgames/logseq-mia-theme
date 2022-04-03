@@ -439,6 +439,7 @@ mark {
 
 /* Page title, breadcrumbs fonts and styles */
 
+#journals > div > div.w-full.p-4 > a.text-4xl,
 h1.title {
 	font-family: -apple-system-headline, "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif !important;
 	font-size: 20pt !important;
