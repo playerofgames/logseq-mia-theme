@@ -276,12 +276,7 @@ body,
 
 .ls-card,	
 .sidebar-item .content,
-#main-content-container {
-	--ls-primary-text-color: #1A1A1A;
-	--ls-title-text-color: #1A1A1A;
-	--color-level-1: #EEEEEE;
-	--color-level-2: #E0E0E0;
-
+#main-content-container .content {
 	font-family: var(--content-font-family, sans-serif), sans-serif;
 	line-height: var(--content-line-height, inherit);
 }
@@ -301,6 +296,14 @@ textarea {
 	font-family: "iA Writer Mono S", "IBM Plex Mono", Menlo, Monaco, MonoLisa, 'Fira Code',Consolas,'COURIER NEW',monospace;
 }
 
+.ls-card,	
+.sidebar-item,
+#main-content-container {
+	--ls-primary-text-color: #1A1A1A;
+	--ls-title-text-color: #1A1A1A;
+	--color-level-1: #EEEEEE;
+	--color-level-2: #E0E0E0;
+}
 
 .dark .sidebar-item .content,
 .dark #main-content-container,
