@@ -467,7 +467,11 @@ a.page-title:hover,
 	font-weight: bold !important;
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
-	border-bottom: none !important;
+	border-bottom: none;
+}
+
+*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) *:is(.editor-inner .h1, .ls-block h1) a {
+	border-bottom: none;
 }
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) *:is(.editor-inner .h2, .ls-block h2) {
