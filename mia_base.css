@@ -471,7 +471,7 @@ a.page-title:hover,
 	font-weight: bold !important;
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
-	border-bottom: none;
+	border-bottom: none !important;
 }
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) *:is(.editor-inner .h2, .ls-block h2) {
