@@ -14,9 +14,9 @@ For user interface elements, the 'system' font is used—[San Francisco](https:/
 
 The main *miA* theme uses the "iA Writer Quattro" font for content, *miA Duo* uses the "iA Writer Duo" font for content, and *miA Mono* uses the "iA Writer Mono" font for content. All variations use the mono font for code (inline and blocks). The *Duo* and *Mono* variations have small spacing changes, and the heading font sizes are the same as regular text.
 
-### Using the themes
+### Using the theme
 
-You can install the themes using the *Logseq marketplace* and choose the variation from the **Themes** menu.
+You can install the theme using the *Logseq marketplace* and choose the variation from the **Themes** menu.
 
 Go to **Plugins** from the main menu (click on '...' in top right of the Logseq window ), select **Marketplace** and then **Themes**. Each theme has an 'Install' link.
 
@@ -77,12 +77,11 @@ https://github.com/playerofgames/logseq-mia-theme
 
 [IBM](https://www.ibm.com/plex/) for their Plex font (which is the genesis of the iA fonts).
 
-[rcvd](https://github.com/rcvd) for their Logseq [Quattro theme](https://github.com/rcvd/logseq-quattro-theme), from which I lifted the embedded font faces for CSS.
+[rcvd](https://github.com/rcvd) for their Logseq [Quattro theme](https://github.com/rcvd/logseq-quattro-theme), from which I took inspiration to make this theme.
 
 Licensed under the MIT License.
 
 ![Logseq miA theme](./icon.png)
-
 
 
 
