@@ -508,9 +508,8 @@ a.page-title:hover,
 	filter: saturate(0%);
 }
 
-/* Hide extraneous stuff: help icon (just press ?) and mindmap (ctrl-m ctrl-m) */
+/* Hide extraneous stuff: help icon (just press ?) */
 
-#logseq-mark-map-injected-ui-item-logseq-mark-map-logseq-mark-map-logseq-mark-map,
 .cp__sidebar-help-btn {
 	display: none;
 }
