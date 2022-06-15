@@ -242,6 +242,11 @@ a.tag[data-ref=card] {
 	color: var(--ls-link-text-color);
 }
 
+.bracket {
+    color: var(--ls-link-ref-text-color) !important;
+    opacity: 0.5 !important;
+}
+
 /* colouring UI */
 
 .cp__right-sidebar-topbar a,
