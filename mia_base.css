@@ -507,9 +507,9 @@ a.page-title:hover,
 	font-weight: normal;
 }
 
-/* Mind map icon desaturation */
+/* Markmap plugin icon desaturation */
 
-#logseq-mark-map-injected-ui-item-logseq-mark-map-logseq-mark-map-logseq-mark-map svg {
+#injected-ui-item-logseq-mark-map-logseq-mark-map svg {
 	filter: saturate(0%);
 }
 
