@@ -5,6 +5,7 @@
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
+	unicode-range: U+0000-04FF;
 }
 
 /* bold */
@@ -14,6 +15,7 @@
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
+	unicode-range: U+0000-04FF;
 }
 
 /* bold italic */
@@ -23,6 +25,7 @@
 	font-weight: bold;
 	font-style: italic;
 	font-display: swap;
+	unicode-range: U+0000-04FF;
 }
 
 /* italic */
@@ -32,6 +35,7 @@
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
+	unicode-range: U+0000-04FF;
 }
 
 	
