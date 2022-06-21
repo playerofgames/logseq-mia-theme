@@ -217,6 +217,7 @@ body,
 .absolute,
 .draw {
 	font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif;
+	font-feature-settings: normal;
 }
 
 /* Content font should be set in variable '--content-font-family' */
@@ -246,6 +247,7 @@ textarea {
 :not(pre)>code,
 .CodeMirror {
 	font-family: "iA Writer Mono S", "IBM Plex Mono", Menlo, Monaco, MonoLisa, 'Fira Code',Consolas,'COURIER NEW',monospace;
+	font-feature-settings: normal;
 }
 
 .ls-card,	
