@@ -37,8 +37,8 @@ The themes use **CSS variables** to control various aspects of presentation, and
 | Variable name | Default value | Value for *miA Serif* |
 |---|---|---|
 | --content-font-family | (not set—theme-specific) | "IBM Plex Serif" |
-| --content-font-size | 12pt | 13.5pt |
-| --content-line-height | 20pt | 22pt |
+| --content-font-size | 100% (12pt) | 13.5pt |
+| --content-line-height | inherit (18pt) | 22pt |
 | --content-font-stylistic-set | (not set—see note 1) | |
 | --title-font-family | (system font—see note 2) | "IBM Plex Serif" |
 | --title-font-size | 20pt | 18pt |
