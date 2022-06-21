@@ -139,6 +139,7 @@ span.inline.done {
 	--ls-link-ref-text-color: #eaeaea;
 	--ls-link-ref-text-hover-color: #fafafa;
 	--ls-quaternary-background-color: var(--accent-dark-color);
+	--ls-icon-color: var(--ls-primary-text-color);
 }
 
 #ui__ac .chosen {
@@ -163,7 +164,7 @@ span.inline.done {
 }
 /* make border around P, B, etc. in search results clearly visible */
 .search-results-wrap .text-xs.rounded.border {
-	border-color: var(--ls-secondary-text-color);
+	border-color: var(--ls-primary-text-color);
 }
 
 /* links and tags */
@@ -213,7 +214,8 @@ a.tag[data-ref=card] {
 body,
 #global-graph,
 .cp__all_pages,
-.absolute {
+.absolute,
+.draw {
 	font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif;
 }
 
@@ -275,6 +277,13 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 	--ls-page-properties-background-color: var(--ls-tertiary-background-color);
 }
 
+
+/* Code and code editing */
+
+.cp__fenced-code-block {
+	margin-bottom: 8px;
+}
+
 .CodeMirror, .CodeMirror-wrap {
 	background-color: var(--ls-tertiary-background-color) !important;
 	text-shadow: none !important;
@@ -309,6 +318,7 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 	color: var(--ls-primary-text-color);
 }
 
+
 /* border around preformatted text to make them stand out just a bit. */
 
 .admonitionblock,
@@ -316,6 +326,10 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 	border: 1px dotted var(--ls-quaternary-background-color);
 	background-color: var(--ls-tertiary-background-color);
 }
+.admonition-icon > svg.svg-shadow {
+	filter: grayscale(30%) brightness(110%);
+}
+
 
 blockquote {
 	background: transparent;
@@ -429,7 +443,23 @@ a.page-title:hover,
 }
 
 
-/* Modest variety for headings */
+/* Headings (in content) */
+
+.blocks-container > div > div > div:not(:first-child)
+:is(.editor-inner .uniline-block:is(.h1,), .ls-block :is(h1)) {
+	margin-top: calc(var(--content-line-height, 18pt) * 1);
+	margin-bottom: 0;;
+}
+.blocks-container > div > div > div:not(:first-child)
+:is(.editor-inner .uniline-block:is(.h2), .ls-block :is(h2)) {
+	margin-top: calc(var(--content-line-height, 18pt) * 0.66);
+	margin-bottom: 0;
+}
+.blocks-container > div > div > div:not(:first-child)
+:is(.editor-inner .uniline-block:is(.h3), .ls-block :is(h3)) {
+	margin-top: calc(var(--content-line-height, 18pt) * 0.25);
+	margin-bottom: 0;
+}
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) *:is(.editor-inner .h1, .ls-block h1) {
 	font-size: var(--content-h1-size, 110%) !important;
@@ -483,6 +513,7 @@ a.page-title:hover,
 
 
 /* Make rounding more consistent with macOS */
+.block-properties,
 .admonitionblock,
 .CodeMirror,
 .rounded {
@@ -547,23 +578,35 @@ a.page-title:hover,
 
 /* Document mode spacing */
 .document-mode .ls-block,
-.document-mode .ls-block :is(h4,h5,h6) {
+.document-mode .ls-block :is(.h4,h4, .h5,h5, h6,.h6) {
 	margin-top: 0;
 }
-
-.document-mode .ls-block :is(h1,h2) {
-    margin-bottom: 1rem;
+.document-mode .ls-block :is(.h1,h1) {
+	margin-top: calc(var(--content-line-height, 18pt) * 1);
+}
+.document-mode .ls-block :is(.h2,h2) {
+	margin-top: calc(var(--content-line-height, 18pt) * 0.66);
+}
+.document-mode .ls-block :is(.h3,h3) {
+	margin-top: calc(var(--content-line-height, 18pt) * 0.33);
 }
 
-.document-mode .ls-block :is(h2) {
+.document-mode .ls-block :is(.h1,h1) {
     margin-bottom: 0.5rem;
 }
-
-.document-mode .ls-block{
+.document-mode .ls-block, 
+.document-mode .ls-block :is(.h2,h2) {
 	margin-bottom: 0.25rem;
 }
-.document-mode .ls-block :is(h3,h4,h5,h6) {
+.document-mode .ls-block :is(.h3,h3, .h4,h4, .h5,h5, .h6,h6) {
     margin-bottom: 0;
+}
+
+@media only screen and (min-width: 900px) {
+	/* line up left edge of content with document title */
+	#root > div > div:not(.ls-wide-mode) #main-content-container .blocks-container.document-mode {
+		margin-left: -8px;
+	}
 }
 
 
