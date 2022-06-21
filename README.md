@@ -1,6 +1,6 @@
 ## Logseq miA theme
 
-**miA** is a Logseq theme family inspired by the styling and typography used by [macOS](https://www.apple.com/macos/monterey/) and [iA Writer](https://ia.net/writer). All of the **miA** themes share a common aesthetic and support light and dark mode (based on the selection in Logseq's *Settings*). Priority is placed on providing a clean editing and reading experience in a familiar, productive environment.
+**miA** is a [Logseq](https://github.com/logseq/logseq) theme family inspired by the styling and typography used by [macOS](https://www.apple.com/macos/monterey/) and [iA Writer](https://ia.net/writer). All of the **miA** themes share a common aesthetic and support light and dark mode (based on the selection in Logseq's *Settings*). Priority is placed on providing a clean editing and reading experience in a familiar, productive environment.
 
 ![miA light](./screenshots/miA-light.png)
 
