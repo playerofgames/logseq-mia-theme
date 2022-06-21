@@ -354,10 +354,6 @@ blockquote {
 /* Distinguish flash cards */
 
 div[data-refs-self*='"card"'] {
-	/*margin: 1rem 0;*/
-}
-
-.ls-block.shadow-xl {
 	border: 1px dotted var(--ls-quaternary-background-color);
 	background-color: var(--ls-tertiary-background-color);
 	border-radius: 10px;
@@ -508,8 +504,8 @@ a.page-title:hover,
 }
 
 
-/* Markmap plugin icon desaturation */
-#injected-ui-item-logseq-mark-map-logseq-mark-map svg {
+/* In-content plugin icon desaturation */
+#main-content-container .ui-items-container a.button {
 	filter: saturate(0%);
 }
 
