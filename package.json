@@ -6,11 +6,6 @@
   "logseq": {
     "themes": [
       {
-        "name": "miA Quattro",
-        "url": "./mia.css",
-        "description": "A theme inspired by macOS and iA Writer."
-      },
-      {
         "name": "miA Duo",
         "url": "./mia_duo.css",
         "description": "A theme inspired by macOS and iA Writer, using the Duo font."
@@ -19,6 +14,11 @@
         "name": "miA Mono",
         "url": "./mia_mono.css",
         "description": "A theme inspired by macOS and iA Writer, using the Mono font."
+      },
+      {
+        "name": "miA Quattro",
+        "url": "./mia_quattro.css",
+        "description": "A theme inspired by macOS and iA Writer."
       },
       {
         "name": "miA Sans",

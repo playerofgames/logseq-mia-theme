@@ -1,7 +1,1 @@
-@import "fonts_quattro.css";
-@import "mia_base.css";
-
-:root {
-	--content-font-family:  "iA Writer Quattro S";
-	--content-font-stylistic-set: "ss04";
-}
+@import "mia_quattro.css";
