@@ -227,8 +227,8 @@ body,
 #main-content-container .content,
 #main-content-container div.page-hierarchy div.initial {
 	font-family: var(--content-font-family);
-	font-size: var(--content-font-size, 100%);
-	line-height: var(--content-line-height, inherit);
+	font-size: var(--content-font-size, 12pt);
+	line-height: var(--content-line-height, 18pt);
 	font-feature-settings: var(--content-font-stylistic-set, normal);
 }
 
@@ -337,7 +337,7 @@ blockquote {
 	background: transparent;
 	border-left: none;
 	font-style: italic;
-	font-size: var(--content-font-size, 100%);
+	font-size: var(--content-font-size, 12pt);
 	margin: 0;
 }
 
@@ -550,7 +550,7 @@ a.page-title:hover,
 
 .table-wrapper :is(th,td) {
 	font-size: var(--table-font-size, 90%);
-	line-height: calc(var(--content-line-height)*0.83);
+	line-height: calc(var(--content-line-height, 18pt)*0.83);
 	border-bottom: none;
 	vertical-align: top;
 	padding: 7px;
