@@ -229,7 +229,7 @@ body,
 	font-family: var(--content-font-family);
 	font-size: var(--content-font-size, 100%);
 	line-height: var(--content-line-height, inherit);
-	font-feature-settings: var(--content-font-stylistic-set);
+	font-feature-settings: var(--content-font-stylistic-set, normal);
 }
 
 
@@ -405,7 +405,7 @@ a.page-title h1.title,
 a.journal-title > h1.title,
 h1.title input:focus-within {
 	font-family: var(--title-font-family,  "_not_a_font"), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
-	font-feature-settings: var(--title-font-stylistic-set);
+	font-feature-settings: var(--title-font-stylistic-set, normal);
 }
 
 /* Built-in pages and modals should use system font for titles and breadcrumbs */
