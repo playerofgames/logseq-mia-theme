@@ -7,7 +7,8 @@
 	--accent-color: #0b82b9;
 	--accent-dark-color: #3982C2;
 	--accent-bright-color: #00BFFF;
-	
+	--sidebar-border-color: #DADADA;
+
 	--ls-primary-background-color: #F7F7F7;
 	--ls-secondary-background-color: #EAEAEA;
 	--ls-tertiary-background-color: #FBFBFB;
@@ -47,6 +48,7 @@
 	--accent-color: #18BDEC;
 	--accent-dark-color: #3982C2;
 	--accent-bright-color: #00BFFF;		
+	--sidebar-border-color: #000000;
 	
 	--ls-primary-background-color: #18181A;
 	--ls-secondary-background-color: #27272A;
@@ -120,6 +122,13 @@ span.inline.done {
 .left-sidebar-inner > div > nav,
 .nav-header {
 	gap: 0;
+}
+/* Borders to main content */
+.left-sidebar-inner {
+	border-right: 1px solid var(--sidebar-border-color);
+}
+.cp__right-sidebar-inner {
+	border-left: 1px solid var(--sidebar-border-color);
 }
 
 
@@ -242,12 +251,14 @@ textarea {
 }
 
 /* Monospace code shall use iA Writer Mono */
-
+.extensions__code-calc-output-line.CodeMirror-line,
 .extensions__code > .extensions__code-lang,
 :not(pre)>code,
 .CodeMirror {
 	font-family: "iA Writer Mono S", "IBM Plex Mono", Menlo, Monaco, MonoLisa, 'Fira Code',Consolas,'COURIER NEW',monospace;
 	font-feature-settings: normal;
+	font-size: 15px;
+	line-height: 23px;
 }
 
 .ls-card,	
@@ -291,8 +302,12 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 	text-shadow: none !important;
 }
 
+.CodeMirror::selection {
+	background-color: var(--ls-selection-background-color) !important;
+}
+
 .CodeMirror pre.CodeMirror-line {
-	font-size: 15px;	
+	font-size: 15px;
 }
 
 .CodeMirror-linenumber {
