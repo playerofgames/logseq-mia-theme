@@ -7,7 +7,7 @@
 */
 
 :root {
-  --calculator-input-width: 70%;
+  --calculator-input-width: 68%;
   --calculator-min-answer-width: 12ch;
   --calculator-accent-color-rgb: var(--accent-color-rgb, 127,127,127);
 }
