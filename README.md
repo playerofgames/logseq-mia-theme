@@ -14,7 +14,7 @@
 | miA Sans | IBM Plex Sans | When you want to see your work in a modern sans serif format. Good for reading. |
 | miA Sans Compact | IBM Plex Sans | Compact version of miA Sans: smaller font, see more content at once. |
 | miA Serif | IBM Plex Serif | When you want to see your work in a classic serif format. Good for reading. |
-| miA Serif Compact | IBM Plex Serif | Compact version of miA Serof: smaller font, see more content at once. |
+| miA Serif Compact | IBM Plex Serif | Compact version of miA Serif: smaller font, see more content at once. |
 
 
 ## Installation
