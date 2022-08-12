@@ -1,0 +1,36 @@
+@import "fonts/sans.css";
+@import "mia_base.css";
+
+:root {
+	--content-font-family:  "IBM Plex Sans";
+	--content-font-size: 12pt;
+	--content-line-height: 18pt;
+
+	--title-font-family:  "IBM Plex Sans";
+	--title-font-breadcrumb-size: var(--content-font-size);
+	--title-font-size: calc(var(--content-font-size)*1.333);
+
+	--block-padding: 2px;
+
+	--content-h1-text-decoration: none;
+	--content-h1-size: 123%;
+
+	--content-h2-size: 115%;
+
+	--content-h3-size: 100%;
+	--content-h3-font-weight: bold;
+	--content-h3-font-style: normal;
+
+	--content-h4-font-weight: bold;
+	--content-h4-font-style: italic;
+}
+
+a.external-link {
+	text-decoration: underline;
+	border: none;
+}
+
+.left-sidebar-inner .nav-content-item .bd ul a {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}

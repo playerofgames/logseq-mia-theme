@@ -12,7 +12,10 @@
 | miA Duo | iA Writer Duo | Like a monospace font, but without the compromises imposed on wider letters. |
 | miA Quattro | iA Writer Quattro | More like a proportional font than Duo, with some narrower letters. Good for small screens. |
 | miA Sans | IBM Plex Sans | When you want to see your work in a modern sans serif format. Good for reading. |
+| miA Sans Compact | IBM Plex Sans | Compact version of miA Sans: smaller font, see more content at once. |
 | miA Serif | IBM Plex Serif | When you want to see your work in a classic serif format. Good for reading. |
+| miA Serif Compact | IBM Plex Serif | Compact version of miA Serof: smaller font, see more content at once. |
+
 
 ## Installation
 
@@ -27,7 +30,9 @@ If you don’t want to use the marketplace, you can add **one** of the following
 @import url('https://playerofgames.github.io/logseq-mia-theme/mia_duo.css');
 @import url('https://playerofgames.github.io/logseq-mia-theme/mia_quattro.css');
 @import url('https://playerofgames.github.io/logseq-mia-theme/mia_sans.css');
+@import url('https://playerofgames.github.io/logseq-mia-theme/mia_sans_compact.css');
 @import url('https://playerofgames.github.io/logseq-mia-theme/mia_serif.css');
+@import url('https://playerofgames.github.io/logseq-mia-theme/mia_serif_compact.css');
 ```
 
 ## Customising the themes

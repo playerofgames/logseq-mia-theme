@@ -1,7 +1,7 @@
 {
   "name": "miA theme",
   "author": "playerofgames",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A theme inspired by macOS and iA Writer.",
   "logseq": {
     "themes": [
@@ -29,6 +29,16 @@
         "name": "miA Serif",
         "url": "./mia_serif.css",
         "description": "A theme inspired by macOS and iA Writer, using the IBM Plex Serif font."
+      },
+      {
+        "name": "miA Sans Compact",
+        "url": "./mia_sans_compact.css",
+        "description": "A theme inspired by macOS and iA Writer, using the IBM Plex Sans font, with more compact spacing."
+      },
+      {
+        "name": "miA Serif Compact",
+        "url": "./mia_serif_compact.css",
+        "description": "A theme inspired by macOS and iA Writer, using the IBM Plex Serif font, with more compact spacing."
       }
     ],
 	"title": "miA theme",
