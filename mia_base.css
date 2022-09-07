@@ -41,6 +41,8 @@
 	--ls-block-bullet-color: rgba(62, 62, 62, 0.25);
 
 	--table-border-color: var(--ls-block-bullet-color);
+
+	--ls-cloze-text-color: var(--accent-color);
 }
 
 /* Note: chosen (i.e., highlighted selection) means we need lighter foreground colors */
@@ -89,6 +91,8 @@
 	--ls-scrollbar-background-color: r rgba(64,64,64,0.5);
 
 	--table-border-color: var(--ls-block-bullet-color);
+
+	--ls-cloze-text-color: var(--accent-color);
 }
 
 /* Checkbox beautification */
@@ -166,7 +170,8 @@ span.inline.done {
 :not(div.ui__modal-panel, .ui__modal-overlay) > .absolute,
 .absolute .menu-link,
 #custom-context-menu > div,
-#custom-context-menu .menu-link {
+#custom-context-menu .menu-link,
+.menu-links-wrapper {
 	background-color: var(--ls-secondary-background-color);
 }
 .absolute .menu-link:hover,
