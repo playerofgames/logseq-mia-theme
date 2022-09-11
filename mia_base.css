@@ -599,11 +599,11 @@ a.page-title:hover,
 
 
 /* Scrollbar in left sidebar: visible only on mouseover */
-#left-sidebar, .left-sidebar-inner, .left-sidebar-inner > div.flex {
-	overflow-y: hidden;
+#left-sidebar .nav-contents-container {
+	overflow-y: hidden !important;
 }
-.left-sidebar-inner > .flex:hover {
-	overflow-y: overlay;
+#left-sidebar .nav-contents-container:hover {
+	overflow-y: overlay !important;
 }
 
 
