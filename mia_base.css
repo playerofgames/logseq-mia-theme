@@ -43,6 +43,10 @@
 	--table-border-color: var(--ls-block-bullet-color);
 
 	--ls-cloze-text-color: var(--accent-color);
+
+	--ls-header-button-background: #505050;
+	--ls-warning-background-color: #f56565;
+	--ls-warning-text-color: #fff;
 }
 
 /* Note: chosen (i.e., highlighted selection) means we need lighter foreground colors */
@@ -93,6 +97,15 @@
 	--table-border-color: var(--ls-block-bullet-color);
 
 	--ls-cloze-text-color: var(--accent-color);
+
+	--ls-header-button-background: #B3B3B3;
+	--ls-warning-background-color: #f56565;
+	--ls-warning-text-color: #fff;
+}
+
+/* Text with background color */
+.with-bg-color {
+	color: #F7F7F7;
 }
 
 /* Checkbox beautification */
@@ -434,7 +447,7 @@ mark {
 a.page-title,
 .block-parents a,
 #journals > div > div.w-full.p-4 > a.text-4xl, /* "Earlier..." */
-a.page-title h1.title,
+.page-title h1.title,
 a.journal-title > h1.title,
 h1.title input:focus-within {
 	font-family: var(--title-font-family,  "_not_a_font"), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
@@ -450,6 +463,7 @@ h1.title input:focus-within {
 #journals > div > div.w-full.p-4 > a.text-4xl,
 h1.title {
 	font-size: var(--title-font-size, 20pt) !important;
+	font-weight: bold;
 }
 
 /* Give the field a bit of pizazz when it's being edited */
