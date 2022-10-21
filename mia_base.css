@@ -47,6 +47,14 @@
 	--ls-header-button-background: #505050;
 	--ls-warning-background-color: #f56565;
 	--ls-warning-text-color: #fff;
+
+	--ls-highlight-color-gray: #DCDADA;
+	--ls-highlight-color-red: #FB9E9E;
+	--ls-highlight-color-yellow: #FCEB96;
+	--ls-highlight-color-green: #CEF196;
+	--ls-highlight-color-blue: #BAECFA;
+	--ls-highlight-color-purple: #E4C4FA;
+	--ls-highlight-color-pink: #FEC3EA;
 }
 
 /* Note: chosen (i.e., highlighted selection) means we need lighter foreground colors */
@@ -101,11 +109,14 @@
 	--ls-header-button-background: #B3B3B3;
 	--ls-warning-background-color: #f56565;
 	--ls-warning-text-color: #fff;
-}
 
-/* Text with background color */
-.with-bg-color {
-	color: #F7F7F7;
+	--ls-highlight-color-gray: #544F4F;
+	--ls-highlight-color-red: #870505;
+	--ls-highlight-color-yellow: #8B7404;
+	--ls-highlight-color-green: #537D11;
+	--ls-highlight-color-blue: #0A6B87;
+	--ls-highlight-color-purple: #530B84;
+	--ls-highlight-color-pink: #8A035C;
 }
 
 /* Checkbox beautification */
