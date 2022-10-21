@@ -267,6 +267,7 @@ body,
 .ls-card,
 .sidebar-item .content,
 #main-content-container .content,
+#main-content-container .cp__sidebar-main-content,
 #main-content-container div.page-hierarchy div.initial {
 	font-family: var(--content-font-family);
 	font-size: var(--content-font-size, 12pt);
@@ -459,6 +460,7 @@ a.page-title,
 .block-parents a,
 #journals > div > div.w-full.p-4 > a.text-4xl, /* "Earlier..." */
 .page-title h1.title,
+.title h1.page-title,
 a.journal-title > h1.title,
 h1.title input:focus-within {
 	font-family: var(--title-font-family,  "_not_a_font"), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
