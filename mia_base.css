@@ -691,6 +691,12 @@ a.page-title:hover,
 }
 
 
+/* Tidy up open cloze */
+a.cloze-revealed {
+	text-decoration: none;
+}
+
+
 /* Hide extraneous stuff: help icon (just press ?) */
 .cp__sidebar-help-btn {
 	display: none;
