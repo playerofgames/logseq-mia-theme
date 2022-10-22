@@ -191,7 +191,7 @@ span.inline.done {
 }
 
 /* ... make popup menus more visible */
-:not(div.ui__modal-panel, .ui__modal-overlay, #search-in-page > div) > .absolute,
+:not(div.ui__modal-panel, .ui__modal-overlay, #search-in-page > div) > .absolute:not(.editing),
 #search-in-page,
 .absolute .menu-link,
 #custom-context-menu > div,
@@ -256,7 +256,7 @@ a.tag[data-ref=card] {
 body,
 #global-graph,
 .cp__all_pages,
-.absolute,
+.absolute:not(.editing),
 .draw {
 	font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif;
 	font-feature-settings: normal;
@@ -468,7 +468,7 @@ h1.title input:focus-within {
 }
 
 /* Built-in pages and modals should use system font for titles and breadcrumbs */
-.absolute, .cp__palette, #search-wrapper {
+.absolute:not(.editing), .cp__palette, #search-wrapper {
 	--title-font-family: ;
 	--title-font-breadcrumb-size: ;
 }
@@ -683,8 +683,8 @@ a.page-title:hover,
 }
 .journal-title > h1 {
 	line-height: 1.5;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 1.5px;
+	padding-bottom: 0.5px;
 	padding-left: 8px;
 	margin-left: -6px;
 	margin-bottom: 12px;
