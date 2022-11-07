@@ -439,6 +439,7 @@ div[data-refs-self*='"card"'] {
 	opacity: 1.0;
 }
 
+.left-sidebar-inner .item.group:hover,
 .left-sidebar-inner .header:hover {
 	background-color: var(--ls-quaternary-background-color) !important;
 }
