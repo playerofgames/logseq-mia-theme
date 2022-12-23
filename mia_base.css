@@ -460,10 +460,9 @@ mark {
 a.page-title,
 .block-parents a,
 #journals > div > div.w-full.p-4 > a.text-4xl, /* "Earlier..." */
-.page-title h1.title,
-.title h1.page-title,
 a.journal-title > h1.title,
-h1.title input:focus-within {
+h1.title input:focus-within,
+.ls-page-title {
 	font-family: var(--title-font-family,  "_not_a_font"), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
 	font-feature-settings: var(--title-font-stylistic-set, normal);
 }
@@ -638,7 +637,6 @@ a.page-title:hover,
 
 /* Improve toolbar hover: tertiary bg does not have enough contrast with primary bg */
 :is(.light, .light-theme) :is(#head, .cp__right-sidebar-topbar) :is(button, .button):hover {
-	background-colour: inherit;
 	filter: contrast(110%) brightness(0.88);
 }
 
@@ -683,12 +681,19 @@ a.page-title:hover,
 	margin-top: 0px;
 }
 .journal-title > h1 {
-	line-height: 1.5;
-	padding-top: 1.5px;
-	padding-bottom: 0.5px;
 	padding-left: 8px;
 	margin-left: -6px;
+}
+.journal-title,
+.ls-page-title {
+	padding-top: 1.5px;
+	padding-bottom: 0.5px;
+	line-height: 1.5;
 	margin-bottom: 12px;
+}
+h1.title,
+.journal-title > h1 {
+	margin-bottom: 0px;
 }
 
 
