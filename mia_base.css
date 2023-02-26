@@ -703,6 +703,12 @@ a.cloze-revealed {
 }
 
 
+/* Make small text a little bigger (for mobile app) */
+.text-sm {
+  font-size: 0.925rem;
+}
+
+
 /* Hide extraneous stuff: help icon (just press ?) */
 .cp__sidebar-help-btn {
 	display: none;
