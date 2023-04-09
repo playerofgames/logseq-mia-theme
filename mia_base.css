@@ -156,6 +156,10 @@ span.inline.done {
 .nav-header {
 	gap: 0;
 }
+.left-sidebar-inner .nav-content-item .bd ul a {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
 /* Borders to main content */
 .left-sidebar-inner {
 	border-right: 1px solid var(--sidebar-border-color);
