@@ -197,7 +197,7 @@ span.inline.done {
 }
 
 /* ... make popup menus more visible */
-:not(div.ui__modal-panel, .ui__modal-overlay, #search-in-page > div) > .absolute:not(.editing, .s1),
+:not(div.ui__modal-panel, .ui__modal-overlay, #search-in-page > div) > .absolute:not(.editing, .whiteboard-page, .s1),
 #search-in-page,
 .absolute .menu-link,
 #custom-context-menu > div,
@@ -257,7 +257,7 @@ a.tag[data-ref=card] {
 
 /* Fonts and their colours */
 
-/* Base font is system font (San Francisco for macOS). */
+/* Base font is system font (San Francisco for macOS). Whack-a-mole. */
 #left-container > #head,
 #main-container > #left-sidebar,
 #right-sidebar .cp__right-sidebar-topbar,
@@ -267,6 +267,8 @@ a.tag[data-ref=card] {
 .cp__all_pages,
 #custom-context-menu,
 .absolute:not(.editing),
+.whiteboard, .whiteboard-dashboard-title, .whiteboard-dashboard-title + div,
+.tl-toolbar label, .tl-context-bar label, .tl-button, .tl-select-input-content, .tl-text-label-wrapper, .tl-tooltip-content,
 .draw {
 	font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif;
 	font-feature-settings: normal;
@@ -479,7 +481,7 @@ h1.title input:focus-within,
 }
 
 /* Built-in pages and modals should use system font for titles and breadcrumbs */
-.absolute:not(.editing), .cp__palette, #search-wrapper {
+.absolute:not(.editing, .whiteboard-page), .cp__palette, #search-wrapper {
 	--title-font-family: ;
 	--title-font-breadcrumb-size: ;
 }
@@ -702,7 +704,7 @@ a.page-title:hover,
 	line-height: 1.5;
 	margin-bottom: 12px;
 }
-h1.title,
+.ls-page-title > h1.title,
 .journal-title > h1 {
 	margin-bottom: 0px;
 }
