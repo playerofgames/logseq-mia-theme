@@ -117,8 +117,11 @@
 	--ls-highlight-color-purple: #530B84;
 	--ls-highlight-color-pink: #8A035C;
 }
-:root{
+:root {
   --ls-font-family: var(--content-font-family);
+}
+html {
+	font-family: var(--ls-font-family), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
 }
 
 /* Checkbox beautification */
