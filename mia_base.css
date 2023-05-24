@@ -200,7 +200,7 @@ span.inline.done {
 }
 
 /* ... make popup menus more visible */
-:not(div.ui__modal-panel, .ui__modal-overlay, #search-in-page > div) > .absolute:not(.editing, .whiteboard-page, .s1),
+:not(div.ui__modal-panel, .ui__modal-overlay, #search-in-page > div) > .absolute:not(.editing, .whiteboard-page, .s1, .s2),
 #search-in-page,
 .absolute .menu-link,
 #custom-context-menu > div,
