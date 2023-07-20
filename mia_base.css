@@ -394,6 +394,9 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 .admonition-icon > svg.svg-shadow {
 	filter: grayscale(30%) brightness(110%);
 }
+.CodeMirror {
+	box-shadow: none !important;
+}
 
 .CodeMirror.CodeMirror-focused {
 	border: 1px solid rgb(var(--accent-color-rgb), 0.7);
