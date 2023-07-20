@@ -238,6 +238,10 @@ a.tag[data-ref=card] {
     opacity: 0.5 !important;
 }
 
+a.external-link {
+  padding: 0;
+}
+
 /* colouring UI */
 
 .cp__right-sidebar-topbar a,
