@@ -331,6 +331,13 @@ textarea {
 	--color-level-2: var(--ls-tertiary-background-color);
 }
 
+:is(.dark, .dark-theme) .ls-card {
+	--ls-primary-text-color: #EEEEEE;
+	--ls-title-text-color: #EEEEEE;
+	--color-level-1: var(--ls-secondary-background-color);
+	--color-level-2: var(--ls-tertiary-background-color);
+}
+
 html[data-theme=light] .cp__right-sidebar .block-content {
 	--ls-page-inline-code-bg-color: #E0E0E0;
 	--ls-page-blockquote-bg-color: #E0E0E0;
