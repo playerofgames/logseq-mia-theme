@@ -512,6 +512,7 @@ h1.title {
 /* Give the field a bit of pizazz when it's being edited */
 
 h1.title input:focus-within {
+	font-size: var(--title-font-size, 20pt) !important;
 	color: var(--ls-link-text-color) !important;
 }
 
