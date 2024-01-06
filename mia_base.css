@@ -28,10 +28,11 @@
 	--ls-page-inline-code-bg-color: #EAEAEA;
 	--ls-a-chosen-bg: #EAEAEA;
 
-	--ls-link-text-color: #0b82b9;
-	--ls-link-text-hover-color: #1a1a1a;
-	--ls-link-ref-text-color: #747474;
-	--ls-link-ref-text-hover-color: #1a1a1a;
+	--ls-link-text-color: var(--accent-color);
+	--ls-link-text-hover-color: var(--ls-primary-text-color);
+	--ls-link-ref-text-color: var(--ls-secondary-text-color);
+	--ls-link-ref-text-hover-color: var(--ls-primary-text-color);
+	--ls-anchor-link-text-color: var(--ls-link-text-color);
 
 	--ls-block-highlight-color: #ACEBFB;
 	--ls-selection-background-color: #ACEBFB;
@@ -84,10 +85,11 @@
 	--ls-page-inline-code-bg-color: #27272A;
 	--ls-a-chosen-bg: #27272A;
 
-	--ls-link-text-color: #18BDEC;
+	--ls-link-text-color: var(--accent-color);
 	--ls-link-text-hover-color: var(--ls-primary-text-color);
 	--ls-link-ref-text-color: var(--ls-secondary-text-color);
 	--ls-link-ref-text-hover-color: var(--ls-primary-text-color);
+	--ls-anchor-link-text-color: var(--ls-link-text-color);
 
 	--ls-page-inline-code-color: var(--ls-primary-text-color);
 
@@ -241,6 +243,10 @@ a.tag[data-ref=card] {
 a.external-link {
   padding: 0;
 }
+a.external-link:hover {
+    color: var(--ls-link-text-hover-color);
+}
+
 
 /* colouring UI */
 
@@ -490,9 +496,8 @@ mark {
 a.page-title,
 .block-parents a,
 #journals > div > div.w-full.p-4 > a.text-4xl, /* "Earlier..." */
-a.journal-title > h1.title,
-h1.title input:focus-within,
-.ls-page-title {
+#main-content-container h1.title,
+#main-content-container h1.title input {
 	font-family: var(--title-font-family,  "_not_a_font"), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
 	font-feature-settings: var(--title-font-stylistic-set, normal);
 }
@@ -503,16 +508,17 @@ h1.title input:focus-within,
 	--title-font-breadcrumb-size: ;
 }
 
-#journals > div > div.w-full.p-4 > a.text-4xl,
-h1.title {
+#journals > div > div.w-full.p-4 > a.text-4xl, /* "Earlier..." */
+#main-content-container h1.title {
 	font-size: var(--title-font-size, 20pt) !important;
 	font-weight: bold;
 }
 
 /* Give the field a bit of pizazz when it's being edited */
-
-h1.title input:focus-within {
+h1.title input {
 	font-size: var(--title-font-size, 20pt) !important;
+}
+h1.title input:focus-within {
 	color: var(--ls-link-text-color) !important;
 }
 
