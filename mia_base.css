@@ -120,7 +120,10 @@
 	--ls-highlight-color-pink: #8A035C;
 }
 :root {
-  --ls-font-family: var(--content-font-family);
+	--ls-font-family: var(--content-font-family);
+	--code-font-family: "iA Writer Mono S";
+	--code-font-size: 15px;
+	--code-line-height: 23px;
 }
 html {
 	font-family: var(--ls-font-family), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
@@ -294,11 +297,10 @@ a.external-link:hover {
 .ls-card,
 .sidebar-item .content,
 #main-content-container .content,
-#main-content-container .cp__sidebar-main-content,
 #main-content-container div.page-hierarchy div.initial {
 	font-size: var(--content-font-size, 12pt);
 	line-height: var(--content-line-height, 18pt);
-	font-feature-settings: var(--content-font-stylistic-set, normal);
+	font-feature-settings: var(--content-font-feature-settings, normal);
 }
 
 textarea {
@@ -314,10 +316,10 @@ textarea {
 .extensions__code > .extensions__code-lang,
 :not(pre)>code,
 .CodeMirror {
-	font-family: "iA Writer Mono S", "IBM Plex Mono", Menlo, Monaco, MonoLisa, 'Fira Code',Consolas,'COURIER NEW',monospace;
-	font-feature-settings: normal;
-	font-size: 15px;
-	line-height: 23px;
+	font-family: var(--code-font-family), "IBM Plex Mono", Menlo, Monaco, MonoLisa, 'Fira Code',Consolas,'COURIER NEW',monospace;
+	font-feature-settings:  var(--code-font-feature-settings, normal);
+	font-size: var(--code-font-size, 15px);
+	line-height: var(--code-line-height, 23px);
 }
 
 .ls-card,
@@ -373,7 +375,7 @@ html[data-theme=light] .cp__right-sidebar .block-content {
 }
 
 .CodeMirror pre.CodeMirror-line {
-	font-size: 15px;
+	font-size: var(--code-font-size, 15px);
 }
 
 .CodeMirror-linenumber {
@@ -496,10 +498,11 @@ mark {
 a.page-title,
 .block-parents a,
 #journals > div > div.w-full.p-4 > a.text-4xl, /* "Earlier..." */
-#main-content-container h1.title,
-#main-content-container h1.title input {
+#main-content-container :is(.ls-page-title, .journal-title) h1.title,
+#main-content-container :is(.ls-page-title, .journal-title) h1.title input {
 	font-family: var(--title-font-family,  "_not_a_font"), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
-	font-feature-settings: var(--title-font-stylistic-set, normal);
+	font-feature-settings: var(--title-font-feature-settings, normal);
+	font-style: var(--title-font-style, normal);
 }
 
 /* Built-in pages and modals should use system font for titles and breadcrumbs */
@@ -509,9 +512,9 @@ a.page-title,
 }
 
 #journals > div > div.w-full.p-4 > a.text-4xl, /* "Earlier..." */
-#main-content-container h1.title {
+#main-content-container h1.title { /* set size of all h1.title, not just content titles */
 	font-size: var(--title-font-size, 20pt) !important;
-	font-weight: bold;
+	font-weight: var(--title-font-weight, bold);
 }
 
 /* Give the field a bit of pizazz when it's being edited */

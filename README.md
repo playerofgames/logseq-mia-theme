@@ -44,11 +44,15 @@ The themes use **CSS variables** to control various aspects of presentation, and
 | --content-font-family | (not set—theme-specific) | "IBM Plex Serif" |
 | --content-font-size | 12pt | 13.5pt |
 | --content-line-height | 18pt | 22pt |
-| --content-font-stylistic-set | (not set—see note 1) | |
+| --content-font-feature-settings | (not set—see note 1) | |
 | --title-font-family | (system font—see note 2) | "IBM Plex Serif" |
 | --title-font-size | 20pt | 18pt |
 | --title-font-breadcrumb-size | (same as content font size) | 13.5pt |
-| --title-font-stylistic-set | (not set—see note 1) | |
+| --title-font-feature-settings | (not set—see note 1) | |
+| --code-font-family | "iA Writer Mono S" | |
+| --code-font-size | 15px | |
+| --code-line-height | 23px | |
+| --code-font-feature-settings | (not set—see note 1) | | 
 | --block-padding | 2px | 5px |
 | --content-h1-text-decoration | underline | none |
 | --content-h1-size | 110% | 123% |
@@ -100,7 +104,7 @@ For the Mono, Duo and Quattro themes, the System default font is used for page t
 :root {
 	--title-font-family: "iA Writer Quattro S";
 	--title-font-size: 18pt;
-	--title-font-stylistic-set: "ss04"; /* plain (not dotted) zeros */
+	--title-font-feature-settings: "ss04"; /* plain (not dotted) zeros */
 }
 ```
 
