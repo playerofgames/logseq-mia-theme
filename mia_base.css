@@ -210,13 +210,19 @@ span.inline.done {
 .absolute .menu-link,
 #custom-context-menu > div,
 #custom-context-menu .menu-link,
+.ui__context-menu-content,
 .menu-links-wrapper {
 	background-color: var(--ls-secondary-background-color);
 }
 .absolute .menu-link:hover,
-#custom-context-menu .menu-link:hover {
+#custom-context-menu .menu-link:hover,
+.ui__context-menu-content > div:hover {
 	--ls-link-ref-text-color: var(--ls-link-ref-text-hover-color);
 	background-color: var(--ls-quaternary-background-color);
+}
+/* left-sidebar item popup border */
+.ui__context-menu-content {
+	border-color: var(--ls-quaternary-background-color);
 }
 /* make border around P, B, etc. in search results clearly visible */
 .search-results-wrap .text-xs.rounded.border {
@@ -282,6 +288,10 @@ a.external-link:hover {
 .ui__notifications-content,
 .cp__all_pages,
 #custom-context-menu,
+.ui__context-menu-content,
+.cp__sidebar-help-menu-popup,
+.cp__handbooks-popup,
+:is(.item-type-page-graph, .item-type-shortcut-settings,) .sidebar-item-header + div,
 .absolute:not(.editing),
 .whiteboard, .whiteboard-dashboard-title, .whiteboard-dashboard-title + div,
 .tl-toolbar label, .tl-context-bar label, .tl-button, .tl-select-input-content, .tl-text-label-wrapper, .tl-tooltip-content,
@@ -299,6 +309,8 @@ a.external-link:hover {
 #main-content-container .content,
 #main-content-container div.page-hierarchy div.initial {
 	font-size: var(--content-font-size, 12pt);
+	font-weight: var(--content-font-weight, normal);
+	font-style: var(--content-font-style, normal);
 	line-height: var(--content-line-height, 18pt);
 	font-feature-settings: var(--content-font-feature-settings, normal);
 }
@@ -746,11 +758,5 @@ a.cloze-revealed {
 /* Make small text a little bigger (for mobile app) */
 .text-sm {
   font-size: 0.925rem;
-}
-
-
-/* Hide extraneous stuff: help icon (just press ?) */
-.cp__sidebar-help-btn {
-	display: none;
 }
 
