@@ -159,6 +159,9 @@ span.inline.done {
 .block-children-left-border:hover {
 	background-color: var(--accent-color);
 }
+.left-sidebar-inner .nav-content-item .header .wrap-th {
+    opacity: .6; /* make more visible */
+}
 /* Tighten navigation items */
 .left-sidebar-inner > div > nav,
 .nav-header {
