@@ -43,11 +43,14 @@ The themes use **CSS variables** to control various aspects of presentation, and
 |---|---|---|
 | --content-font-family | (not set—theme-specific) | "IBM Plex Serif" |
 | --content-font-size | 12pt | 13.5pt |
+| --content-font-weight | normal | |
 | --content-line-height | 18pt | 22pt |
 | --content-font-feature-settings | (not set—see note 1) | |
 | --title-font-family | (system font—see note 2) | "IBM Plex Serif" |
 | --title-font-size | 20pt | 18pt |
 | --title-font-breadcrumb-size | (same as content font size) | 13.5pt |
+| --title-font-style | normal | |
+| --title-font-weight | normal | |
 | --title-font-feature-settings | (not set—see note 1) | |
 | --code-font-family | "iA Writer Mono S" | |
 | --code-font-size | 15px | |
