@@ -20,6 +20,10 @@
 
 	--ls-secondary-text-color: #808080;
 
+	--ls-page-mark-bg-color: #FDEB95;
+	--ls-page-mark-color: var(--ls-primary-text-color);
+	--ls-page-blockquote-color: var(--ls-primary-text-color);
+	
 	--ls-block-ref-link-text-color: #b7bfc5;
 
 	--ls-block-properties-background-color: #EAEAEA;
@@ -77,6 +81,10 @@
 
 	--ls-secondary-text-color: #909090;
 
+	--ls-page-mark-bg-color: #F9E67A;
+	--ls-page-mark-color: var(--ls-primary-background-color);
+	--ls-page-blockquote-color: var(--ls-primary-text-color);
+
 	--ls-block-ref-link-text-color: #2489a3;
 
 	--ls-block-properties-background-color: #27272A;
@@ -119,6 +127,32 @@
 	--ls-highlight-color-purple: #530B84;
 	--ls-highlight-color-pink: #8A035C;
 }
+
+/* Preliminary fixes for newer versions of Logseq */
+html[data-theme=light], html[data-color=logseq][data-theme=light] {
+    --foreground: 240 4% 10%;
+    --background: 0 0% 80%;
+    --popover-foreground: 0 0% 26%;
+    --popover: 0 0% 80%;
+    --primary-foreground: 0 0% 80%;
+    --primary: 193 100% 30%;
+}
+html[data-color=none] ::selection {
+    background-color: var(--ls-block-highlight-color);
+}
+
+html[data-theme=dark], html[data-color=logseq][data-theme=dark] {
+    --background: 240 4% 10%;
+    --foreground: 0 0% 80%;
+    --popover: 0 0% 26%;
+    --popover-foreground: 0 0% 80%;
+    --primary: 193 100% 24%;
+    --primary-foreground: 0 0% 80%;
+}
+html[data-theme=dark] ::selection {
+    background-color: hsl(var(--primary)/.6);
+}
+
 :root {
 	--ls-font-family: var(--content-font-family);
 	--code-font-family: "iA Writer Mono S";
@@ -207,31 +241,6 @@ span.inline.done {
 	color: var(--ls-primary-text-color) !important;
 }
 
-/* ... make popup menus more visible */
-:not(div.ui__modal-panel, .ui__modal-overlay, #search-in-page > div) > .absolute:not(.editing, .whiteboard-page, .s1, .s2),
-#search-in-page,
-.absolute .menu-link,
-#custom-context-menu > div,
-#custom-context-menu .menu-link,
-.ui__context-menu-content,
-.menu-links-wrapper {
-	background-color: var(--ls-secondary-background-color);
-}
-.absolute .menu-link:hover,
-#custom-context-menu .menu-link:hover,
-.ui__context-menu-content > div:hover {
-	--ls-link-ref-text-color: var(--ls-link-ref-text-hover-color);
-	background-color: var(--ls-quaternary-background-color);
-}
-/* left-sidebar item popup border */
-.ui__context-menu-content {
-	border-color: var(--ls-quaternary-background-color);
-}
-/* make border around P, B, etc. in search results clearly visible */
-.search-results-wrap .text-xs.rounded.border {
-	border-color: var(--ls-primary-text-color);
-}
-
 /* links and tags */
 
 a.tag {
@@ -241,10 +250,6 @@ a.tag {
 
 a.tag[data-ref=card] {
 	opacity: 0.5;
-}
-
-.page-ref {
-	color: var(--ls-link-text-color);
 }
 
 .bracket {
@@ -275,7 +280,6 @@ a.external-link:hover {
 #custom-context-menu a:hover,
 .cp__right-sidebar-topbar a:hover,
 .cp__header a.button:hover {
-	/*color: var(--ls-link-text-color);*/
 	opacity: 1;
 }
 
@@ -292,6 +296,7 @@ a.external-link:hover {
 .cp__all_pages,
 #custom-context-menu,
 .ui__context-menu-content,
+.ui__dropdown-menu-content,
 .cp__sidebar-help-menu-popup,
 .cp__handbooks-popup,
 :is(.item-type-page-graph, .item-type-shortcut-settings,) .sidebar-item-header + div,
@@ -326,7 +331,7 @@ textarea {
 	padding: var(--block-padding, 2px) 0;
 }
 
-/* Monospace code shall use iA Writer Mono */
+/* Monospace shall use iA Writer Mono */
 .extensions__code-calc-output-line.CodeMirror-line,
 .extensions__code > .extensions__code-lang,
 :not(pre)>code,
@@ -448,7 +453,7 @@ blockquote {
 	background: transparent;
 	border-left: none;
 	font-style: italic;
-	font-size: var(--content-font-size, 12pt);
+	font-size: inherit;
 	margin: 0;
 }
 
@@ -497,14 +502,11 @@ div[data-refs-self*='"card"'] {
 	background-color: var(--ls-quaternary-background-color) !important;
 }
 
-/* Highlighting is yellow */
+/* Highlighting */
 
 mark {
-	background-color: #FDEB95;
-}
-
-:is(.dark, .dark-theme) mark {
-	background-color: #F9E67A;
+	background-color: var(--ls-page-mark-bg-color);
+	color: var(--ls-page-mark-color);
 }
 
 
@@ -513,8 +515,9 @@ mark {
 a.page-title,
 .block-parents a,
 #journals > div > div.w-full.p-4 > a.text-4xl, /* "Earlier..." */
-#main-content-container :is(.ls-page-title, .journal-title) h1.title,
-#main-content-container :is(.ls-page-title, .journal-title) h1.title input {
+.sidebar-item-header,
+#main-content-container :is(.ls-page-title, .journal-title),
+#main-content-container :is(.ls-page-title, .journal-title) input {
 	font-family: var(--title-font-family,  "_not_a_font"), -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Roboto", "Oxygen", "Ubuntu", sans-serif !important;
 	font-feature-settings: var(--title-font-feature-settings, normal);
 	font-style: var(--title-font-style, normal);
