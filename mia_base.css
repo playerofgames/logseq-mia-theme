@@ -28,7 +28,7 @@
 
 	--ls-block-properties-background-color: #EAEAEA;
 	--ls-page-properties-background-color: #EAEAEA;
-	--ls-table-tr-even-background-color: #EAEAEA;
+	--ls-table-tr-even-background-color: var(--ls-primary-background-color);
 	--ls-page-inline-code-bg-color: #EAEAEA;
 	--ls-a-chosen-bg: #EAEAEA;
 
@@ -89,7 +89,7 @@
 
 	--ls-block-properties-background-color: #27272A;
 	--ls-page-properties-background-color: #27272A;
-	--ls-table-tr-even-background-color: #27272A;
+	--ls-table-tr-even-background-color: var(--ls-primary-background-color);
 	--ls-page-inline-code-bg-color: #27272A;
 	--ls-a-chosen-bg: #27272A;
 
@@ -658,10 +658,6 @@ a.page-title:hover,
 	border-collapse: collapse;
 	font-variant-numeric: tabular-nums;
 	font-feature-settings: "tnum";
-}
-
-.table-wrapper :is(tr,tr:nth-child(even)) {
-	background: inherit;
 }
 
 .table-wrapper tbody {
