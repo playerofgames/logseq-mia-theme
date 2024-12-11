@@ -109,7 +109,7 @@
 	--ls-block-bullet-border-color: #3A3A3A;
 	--ls-guideline-color: rgba(64,64,64,0.5);
 	--ls-scrollbar-foreground-color: rgba(64,64,64,1);
-	--ls-scrollbar-background-color: r rgba(64,64,64,0.5);
+	--ls-scrollbar-background-color: rgba(64,64,64,0.5);
 
 	--table-border-color: var(--ls-block-bullet-color);
 
