@@ -62,7 +62,6 @@
 }
 
 /* Note: chosen (i.e., highlighted selection) means we need lighter foreground colors */
-.chosen,
 .dark, .dark-theme, html[data-theme=dark] {
 
 	--accent-color: #18BDEC;
@@ -220,25 +219,6 @@ span.inline.done {
 }
 .opacity-20 {
 	opacity: 0.4;
-}
-
-/* Selection lists (search, tag complete, etc.) */
-
-#ui__ac .chosen,
-.chosen {
-	--ls-primary-text-color: #fafafa;
-	--ls-link-ref-text-color: #eaeaea;
-	--ls-link-ref-text-hover-color: #fafafa;
-	--ls-quaternary-background-color: var(--accent-dark-color);
-	--ls-icon-color: var(--ls-primary-text-color);
-}
-
-#ui__ac .chosen {
-	background-color: var(--accent-dark-color);
-}
-
-.menu-link.chosen  {
-	color: var(--ls-primary-text-color) !important;
 }
 
 /* links and tags */
@@ -508,6 +488,16 @@ mark {
 	background-color: var(--ls-page-mark-bg-color);
 	color: var(--ls-page-mark-color);
 }
+/* search results */
+.ui__list-item-highlighted-span {
+    color: var(--ls-primary-text-color);
+    background-color: var(--ls-page-mark-bg-color);
+}
+.dark .ui__list-item-highlighted-span {
+	color: var(--ls-primary-background-color);
+    background-color: var(--ls-page-mark-bg-color);
+}
+
 
 
 /* Page title, breadcrumbs fonts and styles */
